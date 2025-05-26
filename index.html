@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureStay - Premium Property Rentals in Landran, Mohali</title>
+    <meta name="description" content="Find premium residential and commercial properties for rent in Landran, Mohali. Verified listings with best prices and 24/7 support.">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="SecureStay - Premium Property Rentals in Landran, Mohali">
+    <meta property="og:description" content="Find your perfect rental property in Landran, Mohali with SecureStay. Verified listings, best prices, and excellent support.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>SecureStay</h1>
+                    <p>Landran, Mohali</p>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#properties" class="nav-link">Properties</a>
+                    <a href="#admin" class="nav-link">Admin</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <!-- <a href=""></a> -->
+                    <a href="https://www.instagram.com/securestay_09?igsh=bGNuYXppaHZyZmhz" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/Kc4QBLMSB2SBkseUPAcrpe" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#properties" class="nav-link">Properties</a>
+            <a href="#admin" class="nav-link">Admin</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Find Your Perfect Home</h1>
+                        <p>Premium residential and commercial properties in Landran, Mohali</p>
+                        
+                        <!-- Search Bar -->
+                        <div class="search-bar">
+                            <div class="search-grid">
+                                <div class="search-field">
+                                    <i class="fas fa-search search-icon"></i>
+                                    <input type="text" id="search-location" placeholder="Search location...">
+                                </div>
+                                
+                                <select id="search-type" class="search-select">
+                                    <option value="">All Types</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="office">Office Space</option>
+                                </select>
+                                
+                                <select id="search-price" class="search-select">
+                                    <option value="">All Prices</option>
+                                    <option value="5000-15000">₹5,000 - ₹15,000</option>
+                                    <option value="15000-30000">₹15,000 - ₹30,000</option>
+                                    <option value="30000-50000">₹30,000 - ₹50,000</option>
+                                    <option value="50000+">₹50,000+</option>
+                                </select>
+                                
+                                <button id="search-btn" class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Properties Listed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1200+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Prime Locations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Properties -->
+            <div class="featured-properties">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Featured Properties</h2>
+                        <p>Handpicked premium properties in prime locations</p>
+                    </div>
+
+                    <!-- Property Filters -->
+                    <div class="property-filters">
+                        <button class="filter-btn active" data-filter="all">All Properties</button>
+                        <button class="filter-btn" data-filter="residential">Residential</button>
+                        <button class="filter-btn" data-filter="commercial">Commercial</button>
+                        <button class="filter-btn" data-filter="apartment">Apartment</button>
+                        <button class="filter-btn" data-filter="office">Office Space</button>
+                    </div>
+
+                    <!-- Properties Grid -->
+                    <div id="properties-grid" class="properties-grid">
+                        <!-- Properties will be loaded here by JavaScript -->
+                    </div>
+
+                    <div class="view-all-section">
+                        <button id="view-all-btn" class="view-all-btn">View All Properties</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="why-choose-us">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose SecureStay?</h2>
+                        <p>Your trusted partner for premium property rentals</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Verified Properties</h3>
+                            <p>All properties are thoroughly verified and authenticated for your safety and peace of mind.</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock customer support to assist you with any queries or concerns.</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3>Best Prices</h3>
+                            <p>Competitive pricing with no hidden charges. Get the best value for your money.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Ready to Find Your Dream Property?</h2>
+                        <p>Contact us today and let our experts help you find the perfect space</p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Us</h3>
+                            <a href="tel:8840023904">8840023904</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3>WhatsApp</h3>
+                            <a href="https://chat.whatsapp.com/Kc4QBLMSB2SBkseUPAcrpe" target="_blank">Join Group Chat</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fab fa-instagram"></i>
+                            <h3>Follow Us</h3>
+                            <a href="https://www.instagram.com/securestay_09?igsh=bGNuYXppaHZyZmhz" target="_blank">@securestay_09</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Page -->
+        <section id="properties" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Properties in Landran, Mohali</h1>
+                    <p>Find your perfect rental property from our curated selection</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="search-grid">
+                        <div class="search-field">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="properties-search-location" placeholder="Search location...">
+                        </div>
+                        
+                        <select id="properties-search-type" class="search-select">
+                            <option value="">All Types</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="office">Office Space</option>
+                        </select>
+                        
+                        <select id="properties-search-price" class="search-select">
+                            <option value="">All Prices</option>
+                            <option value="5000-15000">₹5,000 - ₹15,000</option>
+                            <option value="15000-30000">₹15,000 - ₹30,000</option>
+                            <option value="30000-50000">₹30,000 - ₹50,000</option>
+                            <option value="50000+">₹50,000+</option>
+                        </select>
+                        
+                        <button id="properties-search-btn" class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filters and Sort -->
+                <div class="filters-sort">
+                    <div class="active-filters">
+                        <span class="filter-label">Active Filters:</span>
+                        <div id="active-filters-container"></div>
+                        <button id="clear-filters" class="clear-filters-btn" style="display: none;">Clear All</button>
+                    </div>
+
+                    <div class="sort-section">
+                        <span class="sort-label">Sort by:</span>
+                        <select id="sort-select" class="sort-select">
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="area-large">Area: Largest First</option>
+                            <option value="area-small">Area: Smallest First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Results Count -->
+                <div id="results-count" class="results-count">
+                    <p>Loading properties...</p>
+                </div>
+
+                <!-- Properties Grid -->
+                <div id="all-properties-grid" class="properties-grid">
+                    <!-- Properties will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Property Details Modal -->
+        <div id="property-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div id="property-details" class="property-details">
+                    <!-- Property details will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Page -->
+        <section id="admin" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Admin Dashboard</h1>
+                    <p>Manage your property listings</p>
+                    <button id="add-property-btn" class="add-property-btn">
+                        <i class="fas fa-plus"></i>
+                        Add New Property
+                    </button>
+                </div>
+
+                <!-- Admin Stats -->
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <div class="stat-number" id="admin-total-listings">0</div>
+                            <div class="stat-label">Total Listings</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <div class="stat-number" id="admin-active-rentals">0</div>
+                            <div class="stat-label">Active Rentals</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <div class="stat-number" id="admin-pending-approvals">0</div>
+                            <div class="stat-label">Pending Approvals</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <div class="stat-number">₹12.5L</div>
+                            <div class="stat-label">Monthly Revenue</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Properties Table -->
+                <div class="admin-table-container">
+                    <h3>Property Listings</h3>
+                    <div id="admin-properties-table" class="admin-table">
+                        <!-- Table will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add/Edit Property Modal -->
+        <div id="property-form-modal" class="modal">
+            <div class="modal-content large-modal">
+                <div class="modal-header">
+                    <h3 id="property-form-title">Add New Property</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <form id="property-form" class="property-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="property-title">Property Title</label>
+                            <input type="text" id="property-title" name="title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-type">Property Type</label>
+                            <select id="property-type" name="type" required>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="office">Office Space</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-description">Description</label>
+                        <textarea id="property-description" name="description" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="property-location">Location</label>
+                            <input type="text" id="property-location" name="location" placeholder="e.g., Sector 82, Landran" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-address">Full Address</label>
+                            <input type="text" id="property-address" name="address" placeholder="Complete address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-4">
+                        <div class="form-group">
+                            <label for="property-rent">Monthly Rent (₹)</label>
+                            <input type="number" id="property-rent" name="rent" placeholder="25000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-area">Area (sq ft)</label>
+                            <input type="number" id="property-area" name="area" placeholder="1200" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-bedrooms">Bedrooms</label>
+                            <input type="number" id="property-bedrooms" name="bedrooms" placeholder="3">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-bathrooms">Bathrooms</label>
+                            <input type="number" id="property-bathrooms" name="bathrooms" placeholder="2">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-contact">Contact Number</label>
+                        <input type="tel" id="property-contact" name="contactNumber" value="8840023904" required>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="form-group">
+                        <label>Amenities</label>
+                        <div class="amenities-input">
+                            <input type="text" id="new-amenity" placeholder="Add amenity">
+                            <button type="button" id="add-amenity-btn" class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div id="amenities-list" class="tags-list"></div>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="form-group">
+                        <label>Images (URLs)</label>
+                        <div class="images-input">
+                            <input type="url" id="new-image" placeholder="Add image URL">
+                            <button type="button" id="add-image-btn" class="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div id="images-list" class="images-preview"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Save Property</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SecureStay</h3>
+                    <p>Your trusted partner for premium property rentals in Landran, Mohali. Finding you the perfect space since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/securestay_09?igsh=bGNuYXppaHZyZmhz" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/Kc4QBLMSB2SBkseUPAcrpe" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#admin">Admin</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Property Types</h4>
+                    <ul>
+                        <li><a href="#properties" data-filter="residential">Residential</a></li>
+                        <li><a href="#properties" data-filter="commercial">Commercial</a></li>
+                        <li><a href="#properties" data-filter="apartment">Apartments</a></li>
+                        <li><a href="#properties" data-filter="office">Office Spaces</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:8840023904">8840023904</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Landran, Mohali, Punjab</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://chat.whatsapp.com/Kc4QBLMSB2SBkseUPAcrpe" target="_blank">WhatsApp Group</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 SecureStay. All rights reserved. | Serving Landran, Mohali with premium property rentals.</p>
+            </div>
+        </div>
+
+        <!-- Floating WhatsApp Button -->
+        <div class="floating-whatsapp">
+            <a href="https://chat.whatsapp.com/Kc4QBLMSB2SBkseUPAcrpe" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
