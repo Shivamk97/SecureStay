@@ -4,9 +4,9 @@
   --secondary: #34C759;
   --accent: #FF9500;
   --background: #F7F9FC;
-  --foreground: #2C3E50;
+  --foreground: #F7F9FC;
   --muted: #E8EDF5;
-  --muted-foreground: #6B7280;
+  --muted-foreground: #F7F9FC;
   --border: #E5E7EB;
   --white: #FFFFFF;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -1231,7 +1231,7 @@ img {
 }
 
 .footer-section p {
-  color: #D1D5DB;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -1259,7 +1259,7 @@ img {
 }
 
 .footer-section ul li a {
-  color: #D1D5DB;
+  color: #040c1a;
   transition: var(--transition);
 }
 
@@ -1280,11 +1280,11 @@ img {
 }
 
 .contact-item i {
-  color: #D1D5DB;
+  color: #06090e;
 }
 
 .contact-item a {
-  color: #D1D5DB;
+  color: #06080a;
   transition: var(--transition);
 }
 
@@ -1299,7 +1299,7 @@ img {
 }
 
 .footer-bottom p {
-  color: #D1D5DB;
+  color: #090c11;
 }
 
 /* Floating WhatsApp Button */
@@ -1553,12 +1553,12 @@ img {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0F172A;
+    /* --background: #0F172A; */
     --foreground: #F8FAFC;
     --muted: #1E293B;
     --muted-foreground: #94A3B8;
     --border: #334155;
-    --white: #1E293B;
+    --white: #F7F9FC;
   }
 
   .search-bar,
@@ -1566,7 +1566,7 @@ img {
   .contact-card,
   .modal-content,
   .admin-table-container {
-    background: var(--white);
+    /* background: var(--white); */
     border: 1px solid var(--border);
   }
 }
